@@ -1,0 +1,12 @@
+{% if data %}
+    <ul>
+        {% for hobby in data %}
+            <li>
+                <strong>Name:</strong> {{ hobby.name }} <br>
+                <strong>Description:</strong> {{ hobby.description }}
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No hobbies are available.</p>
+{% endif %}
