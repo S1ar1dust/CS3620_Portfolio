@@ -1,0 +1,17 @@
+{% load static %}
+
+{% if data %}
+    <ul>
+        {% for portfolio in data %}
+            <li>
+                <strong>Name:</strong> {{ portfolio.name }} <br>
+                <strong>Description:</strong> {{ portfolio.description }}
+                <li>
+                    <img src="{% static portfolio.image %}" width="400px" height="400px">
+                </li>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No portfolios are available.</p>
+{% endif %}

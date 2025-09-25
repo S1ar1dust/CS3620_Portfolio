@@ -1,0 +1,17 @@
+{% load static %}
+
+{% if data %}
+    <ul>
+        {% for hobby in data %}
+            <li>
+                <strong>Name:</strong> {{ hobby.name }} <br>
+                <strong>Description:</strong> {{ hobby.description }}
+                <li>
+                    <img src="{% static hobby.image %}" width="400px" height="400px">
+                </li>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No hobbies are available.</p>
+{% endif %}
