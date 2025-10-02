@@ -1,0 +1,41 @@
+{% include 'DB/Navbar.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post" action="{% url 'portfolio' %}">
+    {% csrf_token %}
+        <table>
+            <tr><td><h3>List of portfolios:</h3></td></tr>
+            <tr><td><p>Click to open in new page</p></td></tr>
+
+            {% for portfolio in portfolios %}
+                <tr>
+                    <td><a href="#">{{ portfolio.name }}</a></td>
+                    <td>
+                        <button name="btnPortfolioEdit" value="{{ portfolio.id }} " formnovalidate>Edit</button>
+                        <button name="btnPortfolioDelete" value="{{ portfolio.id }}" formnovalidate>Delete</button>
+                    </td>
+                </tr>
+            {% endfor %}
+
+            <tr><td><br></td></tr>
+            <tr><td><h3>Form to add a portfolio:</h3></td></tr>
+            <tr>
+                {% for field in form %}
+                    <tr>
+                        <td>{{ field.name }}</td>
+                        <td>{{ field }}</td>
+                    </tr>
+                {% endfor %}
+
+                <td><button name="btnPortfolioSave">Save</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

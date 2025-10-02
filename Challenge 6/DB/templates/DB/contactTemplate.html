@@ -1,0 +1,42 @@
+{% include 'DB/Navbar.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <h1>This is where my contact info is</h1>
+    <h3>Perferred contact method:</h3>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;jaredesquivel@mail.weber.edu</p>
+</head>
+
+<body>
+
+    <form method="post" action="{% url 'Contact' %}">
+    {% csrf_token %}
+        <table>
+            <tr><td><h3>Current contacts:</h3></td></tr>
+            {% for contact in contacts %}
+                <tr>
+                    <td>{{ contact.name }}</td>
+                    <td>{{ contact.email }}</td>
+                    <td>{{ contact.message }}</td>
+                </tr>
+            {% endfor %}
+
+            <tr><td><br></td></tr>
+            <tr><td><h3>Form to add contact:</h3></td></tr>
+            <tr>
+                {% for field in form %}
+                    <tr>
+                        <td>{{ field.name }}</td>
+                        <td>{{ field }}</td>
+                    </tr>
+                {% endfor %}
+
+                <td><button name="Save">Save</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
