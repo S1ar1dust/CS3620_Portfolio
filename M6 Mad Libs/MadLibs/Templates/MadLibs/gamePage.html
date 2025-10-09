@@ -1,0 +1,29 @@
+{% include 'MadLibs/Header.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'cssStyles/websiteCSS.css' %}">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MadLibs Game</title>
+</head>
+<body>
+    <form method="post" action="{% url 'Game' %}">
+    {% csrf_token %}
+        <table>
+            <tr><td><h3>Please input data into the prompts below:</h3></td></tr>
+            <tr>
+                {% for field in form %}
+                    <tr>
+                        <td>{{ field.name }}</td>
+                        <td>{{ field }}</td>
+                    </tr>
+                {% endfor %}
+
+                <td><button name="Save" style="width: max-content">Load story</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

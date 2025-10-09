@@ -1,0 +1,18 @@
+{% include 'MadLibs/Header.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'cssStyles/websiteCSS.css' %}">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stories</title>
+
+    <h1 style="text-align: center; margin: 10px" >All stories in this MadLibs website:</h1>
+</head>
+<body>
+    {% for x in stories %}
+        <h4 style="margin: 20px">{{ x.tellStory }}}</h4>
+    {% endfor %}
+</body>
+</html>

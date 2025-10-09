@@ -1,0 +1,61 @@
+7 inputs for madlibs game:
+	1: NAME(Mr Gopher)
+	2: NOUN1(Charmony dove)
+	3: NOUN2(Nest)
+	4: PLACE(Yard)
+	5: VERB(Sing)
+	6: ADJECTIVE(Surviving)
+	7: PERSON(parents)
+
+NAME		x
+NOUN1		x
+NOUN2		X
+PLACE		x
+VERB		X
+ADJECTIVE	x
+PERSON		x
+
+One day, after dinner, while my younger sister and I were lounging about in NAME PLACE, we spotted a fledgling NOUN1 all on its own. That baby NOUN1 was tiny, it didn't even have all of its feathers, and it couldn't VERB. When we found it, it was already on its last breath, having fallen into a shrub — probably abandoned by its PERSON. We decided to build a NOUN2 for it right there and then. However, thinking back, that winter was unusually cold, with fierce winds at night in the PLACE, not to mention the many poisonous bugs and wild beasts in the vicinity... It was clear that if we left the fledgling in the PLACE, it stood no chance of ADJECTIVE until spring. So, I suggested we take it inside, place it on the shelf by the window, and asked the adults to fashion a cage for it. We decided that when it regained its strength enough to spread its wings, we would release it back into the wild. The tragic part something that we'd never considered — was that this bird's fate had already been determined long before this moment... Its destiny was determined by our momentary whim. Now, I pass the power of choice to you all. Faced with this situation, what choice would you make? Stick to the original plan, and build a NOUN2 with soft net where the NOUN1 fell? Or build a cage for it, and feed it, giving it the utmost care from within the warmth of a home? I eagerly await your answer.
+
+PERSON was taking a love stroll down PLACE to the way to coast. As they walk the ecountered a NOUN1 ADJECTIVE and their friend NAME but alas they payed to mind to it but as soon as they reached their destination they would see dozens of NOUN2 VERB the coast.
+
+Once upon a time there was a NOUN1 who ruled the kingdom of PLACE. They were a ADJECTIVE king who did great things but they were always jealous of their rivil kingdoms king of NAME who would VERB the inhabitants of the kingdom with NOUN2.
+
+Welcome to a tutorial on NOUN1. This is NAME and let get into NOUN1. Now first your gonna want to first find volunteer here I have my assistant PERSON who is going to help with VERB. Remember to not try this a home as you can get hurt on ADJECTIVE professionals should try this with proper equipment and at the right locations such as PLACE
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+from MadLibs.models import Input
+input = Input(name='x', noun1='x', noun2='x', place='x', verb='x', adjective='x', person='x')
+input.save()
+
+from MadLibs.models import Story
+story1 = Story(tellStory='''One day, after dinner, while my younger sister and I were lounging about in NAME PLACE, we spotted a fledgling NOUN1 all on its own. That baby NOUN1 was tiny, it didn't even have all of its feathers, and it couldn't VERB. When we found it, it was already on its last breath, having fallen into a shrub probably abandoned by its PERSON. We decided to build a NOUN2 for it right there and then. However, thinking back, that winter was unusually cold, with fierce winds at night in the PLACE, not to mention the many poisonous bugs and wild beasts in the vicinity... It was clear that if we left the fledgling in the PLACE, it stood no chance of ADJECTIVE until spring. So, I suggested we take it inside, place it on the shelf by the window, and asked the adults to fashion a cage for it. We decided that when it regained its strength enough to spread its wings, we would release it back into the wild. The tragic part something that we'd never considered was that this bird's fate had already been determined long before this moment... Its destiny was determined by our momentary whim. Now, I pass the power of choice to you all. Faced with this situation, what choice would you make? Stick to the original plan, and build a NOUN2 with soft net where the NOUN1 fell? Or build a cage for it, and feed it, giving it the utmost care from within the warmth of a home? I eagerly await your answer.''')
+story2 = Story(tellStory='''On a bright early morning, NAME was found in his garden, looking ADJECTIVE. He was holding a NOUN1 and staring at a NOUN2 that had mysteriously appeared near the PLACE. Suddenly, he decided to VERB, just as PERSON walked by questioning what they saw.''')
+story3 = Story(tellStory='''My name is NAME, and I used to work at the PLACE down the street. It has been ADJECTIVE ever since I was VERB with a NOUN1 in one hand and a NOUN2 in the other. PERSON would always record those fun times.
+''')
+story4 = Story(tellStory='''The NOUN1 was so far away that PERSON had to VERB just to attempt to reach it. Luckily, NAME was nearby with their trusty NOUN2, ready to lend a hand. After what felt like forever, they finally arrived at the ADJECTIVE PLACE.''')
+story5 = Story(tellStory='''I was ADJECTIVE today while looking for NOUN1. The world felt like it was VERB as I looked around PLACE. In my search PERSON helped point me towards a potential lead on NAME. All I had to do was use NOUN2 to get there faster.''')
+story6 = Story(tellStory='''A walk around the park with NOUN2 is nice after the ADJECTIVE attack of falling NOUN1 last week. NAME still can’t believe how PERSON managed to VERB through it all. You would think being in the middle of PLACE would''')
+story7 = Story(tellStory='''PERSON was taking a love stroll down PLACE to the way to coast. As they walk the ecountered a NOUN1 ADJECTIVE and their friend NAME but alas they payed to mind to it but as soon as they reached their destination they would see dozens of NOUN2 VERB the coast.''')
+story8 = Story(tellStory='''Once upon a time there was a NOUN1 who ruled the kingdom of PLACE. They were a ADJECTIVE king who did great things but they were always jealous of their rivil kingdoms king of NAME who would VERB the inhabitants of the kingdom with NOUN2.''')
+story9 = Story(tellStory='''Welcome to a tutorial on NOUN1. This is NAME and let get into NOUN1. Now first your gonna want to first find volunteer here I have my assistant PERSON who is going to help with VERB. Remember to not try this a home as you can get hurt on ADJECTIVE professionals should try this with proper equipment and at the right locations such as PLACE''')
+
+
+
+story10 = Story(tellStory='''''')
+story11 = Story(tellStory='''''')
+story12 = Story(tellStory='''''')
+story13 = Story(tellStory='''''')
+story14 = Story(tellStory='''''')
+story15 = Story(tellStory='''''')
+story_list = [story10, story11, story12, story13, story14, story15]
+for x in story_list:
+	x.save()
+
+
+story_list = [story10, story11, story12, story13, story14, story15]
+
+story_list = [story1, story2, story3, story4, story5, story6, story7, story8, story9]
+story_list = [story1]
+Story.objects.all().values()
+Input.objects.all().values() 
