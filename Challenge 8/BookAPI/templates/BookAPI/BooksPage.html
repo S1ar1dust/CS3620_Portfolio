@@ -1,0 +1,103 @@
+{% include 'BookAPI/pageHeader.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Books</title>
+
+    <style>
+        body {
+            background: url('{% static "Library_Background.png" %}') 50% 0 no-repeat fixed;
+        }
+    </style>
+</head>
+<body>
+   <h1 style="text-align: center; margin: 30px; color: white">List of Books in DB:</h1>
+
+   <div class="container">
+       <div class="row">
+           <div class="col-md-10">
+               <form class="form-inline my-2 my-lg-0">
+                   <div class="input-group">
+                       <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="searchBar">
+
+                       <div class="input-group-append">
+                           <button class="btn btn-outline-light my-2 my-sm-0">Search</button>
+                       </div>
+                   </div>
+               </form>
+           </div>
+           <div class="col">
+               <p style="text-align: right; color: white; font-size: 20px">Page {{ books.number }} of {{ books.paginator.num_pages }}</p>
+           </div>
+       </div>
+   </div>
+
+   <!-- Display the data from the BookData model -->
+   {% for book in books %}
+       <div class="container" style="background-color: white; margin-bottom: 20px; margin-top: 20px text-align: center">
+           <div class="row">
+               <div class="col-md-8">
+                   <div class="row">
+                       <h3 style="align-content: center; text-align: center">{{ book.name }}</h3>
+                   </div>
+
+                   <div class="row">
+                       <div class="col">
+                           <h5 style="text-align: center">Category: {{ book.category }}</h5>
+                       </div>
+
+                       <div class="col">
+                           <h5 style="text-align: center">Rating: {{ book.rating }}</h5>
+                       </div>
+                   </div>
+
+                   <div class="row">
+                       <p>{{ book.description }}</p>
+                   </div>
+               </div>
+
+               <div class="col" style="margin: auto; text-align: center">
+                   <img src="{% static book.image %}" alt="Image was supposed to load here" width="250" height="250" style="padding: 10px">
+               </div>
+           </div>
+       </div>
+   {% endfor %}
+
+   {% if books.paginator.num_pages >= 1 %}
+       <div style="text-align: center; margin: 20px; align-content: center">
+           {% if books.number != 1 or books.paginator.num_pages != 1 %}
+               <a href="?page=1" class="btn btn-light" tabindex="-1" role="button" aria-disabled="true">First Page</a>
+           {% endif %}
+
+           {% if books.has_next %}
+               <a href="?page={{ books.next_page_number }}" class="btn btn-light" tabindex="-1" role="button" aria-disabled="true">Next Page</a>
+           {% endif %}
+
+           {% if books.has_previous %}
+               <a href="?page={{ books.previous_page_number }}" class="btn btn-light" tabindex="-1" role="button" aria-disabled="true">Previous</a>
+           {% endif %}
+
+           {% if books.number != books.paginator.num_pages%}
+               <a href="?page={{ books.paginator.num_pages }}" class="btn btn-light" tabindex="-1" role="button" aria-disabled="true">Last Page</a>
+           {% endif %}
+       </div>
+    {% endif %}
+<!--
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    {{ books }} <br/>
+    Has Previous: {{ books.has_previous }} <br/>
+    Has Next: {{ books.has_next }} <br/>
+    Current Page: {{ books.number }} <br/>
+    Number of Pages: {{ books.paginator.num_pages }} <br/>
+-->
+</body>
+</html>

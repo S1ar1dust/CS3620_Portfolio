@@ -1,0 +1,187 @@
+from BookAPI.models import BookData
+book1 = BookData(name='The Great Gatsby', category='Historical Fiction', description='''The Great Gatsby, F. Scott Fitzgerald’s third book, stands as the supreme achievement 
+of his career. First published in 1925, this quintessential novel of the Jazz Age has been 
+acclaimed by generations of readers. The story of the mysteriously wealthy Jay Gatsby 
+and his love for the beautiful Daisy Buchanan, of lavish parties on Long Island at a time 
+when The New York Times noted “gin was the national drink and sex the national 
+obsession,” it is an exquisitely crafted tale of America in the 1920s.''', rating='7.86', image='The Great Gatsby.jpg')
+book2 = BookData(name='To Kill a Mockingbird', category='Historical Fiction', description='''A lawyer's advice to his children as he defends the real mockingbird of Harper Lee's 
+classic novel - a black man charged with the rape of a white girl. Through the young 
+eyes of Scout and Jem Finch, Harper Lee explores with exuberant humour the 
+irrationality of adult attitudes to race and class in the Deep South of the 1930s. The 
+conscience of a town steeped in prejudice, violence and hypocrisy is pricked by the 
+stamina of one man's struggle for justice. But the weight of history will only tolerate so 
+much.''', rating='8.52', image='To Kill A Mockingbird.jpg')
+book3 = BookData(name='Lord of the Flies', category='Fiction', description='''At the dawn of the next world war, a plane crashes on an uncharted island, stranding a 
+group of schoolboys. At first, with no adult supervision, their freedom is something to 
+celebrate; this far from civilization the boys can do anything they want. Anything. They 
+attempt to forge their own society, failing, however, in the face of terror, sin and evil. And 
+as order collapses, as strange howls echo in the night, as terror begins its reign, the 
+hope of adventure seems as far from reality as the hope of being rescued. Labeled a 
+parable, an allegory, a myth, a morality tale, a parody, a political treatise, even a vision of 
+the apocalypse, Lord of the Flies is perhaps our most memorable novel about “the end of 
+innocence, the darkness of man’s heart.”''', rating='7.4', image='Lord Of The Flies.jpg')
+book4 = BookData(name='The Outsiders', category='Historical Fiction', description='''No one ever said life was easy. But Ponyboy is pretty sure that he's got things figured 
+out. He knows that he can count on his brothers, Darry and Sodapop. And he knows that 
+he can count on his friends - true friends who would do anything for him, like Johnny and 
+Two-Bit. And when it comes to the beating up on "greasers" like him and his friends - he 
+knows that he can count on them for trouble. But one night someone takes things too far, 
+and Ponyboy's world is turned upside down…''', rating='8.28', image='The Outsiders.jpg')
+book5 = BookData(name='The Boys in the Boat', category='Nonfiction', description='''was an unlikely quest from the start. With a team composed of the sons of loggers, 
+shipyard workers, and farmers, the University of Washington’s eight-oar crew team was 
+never expected to defeat the elite teams of the East Coast and Great Britain, yet they 
+did, going on to shock the world by defeating the German team rowing for Adolf Hitler. 
+The emotional heart of the tale lies with Joe Rantz, a teenager without family or 
+prospects, who rows not only to regain his shattered self-regard but also to find a real 
+place for himself in the world. Drawing on the boys’ own journals and vivid memories of a 
+once-in-a-lifetime shared dream, Brown has created an unforgettable portrait of an era, a 
+celebration of a remarkable achievement, and a chronicle of one extraordinary young 
+man’s personal quest.''', rating='4.39', image='The Boys In The Boat.jpg')
+book6 = BookData(name='Harry Potter and the Sorcerer’s Stone', category='Fantasy', description='''Harry Potter has never even heard of Hogwarts when the letters start dropping on the 
+doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment 
+with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on 
+Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid 
+bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at 
+Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin! 
+''', rating='8.94', image='Harry Potter And The Sorcerers Stone.jpg')
+book7 = BookData(name='The Hunger Games', category='Fantasy', description='''In the ruins of a place once known as North America lies the nation of Panem, a shining 
+Capitol surrounded by twelve outlying districts. The Capitol is harsh and cruel and keeps 
+the districts in line by forcing them all to send one boy and one girl between the ages of 
+twelve and eighteen to participate in the annual Hunger Games, a fight to the death on 
+live TV. 
+Sixteen-year-old Katniss Everdeen regards it as a death sentence when she steps 
+forward to take her sister's place in the Games. But Katniss has been close to dead 
+before-and survival, for her, is second nature. Without really meaning to, she becomes a 
+contender. But if she is to win, she will have to start making choices that weigh survival 
+against humanity and life against love.''', rating='8.7', image='The Hunger Games.jpg')
+book8 = BookData(name='The Maze Runner', category='Science Fiction', description='''If you ain’t scared, you ain’t human. 
+When Thomas wakes up in the lift, the only thing he can remember is his name. He’s 
+surrounded by strangers—boys whose memories are also gone. 
+Nice to meet ya, shank. Welcome to the Glade. 
+Outside the towering stone walls that surround the Glade is a limitless, ever-changing 
+maze. It’s the only way out—and no one’s ever made it through alive. 
+Everything is going to change. 
+Then a girl arrives. The first girl ever. And the message she delivers is terrifying. 
+Remember. Survive. Run.''', rating='8.1', image='The Maze Runner.jpg')
+book9 = BookData(name='Frankenstein', category='Science Fiction', description='''Obsessed with creating life itself, Victor Frankenstein plunders graveyards for the 
+material to fashion a new being, which he shocks into life with electricity. But his botched 
+creature, rejected by Frankenstein and denied human companionship, sets out to 
+destroy his maker and all that he holds dear. Mary Shelley's chilling Gothic tale was 
+conceived when she was only eighteen, living with her lover Percy Shelley near Byron's 
+villa on Lake Geneva. It would become the world's most famous work of horror fiction, 
+and remains a devastating exploration of the limits of human creativity''', rating='7.78', image='Frankenstein.jpg')
+book10 = BookData(name='Hatchet', category='Fiction', description='''Brian had been distraught over his parents' impending divorce and the secret he carries 
+about his mother, but now he is truly desolate and alone. Exhausted, terrified, and 
+hungry, Brian struggles to find food and make a shelter for himself. He has no special 
+knowledge of the woods, and he must find a new kind of awareness and patience as he 
+meets each day's challenges. Is the water safe to drink? Are the berries he finds 
+poisonous? ''', rating='7.58', image='Hatchet.jpg')
+book11 = BookData(name='The Call of the Wild', category='Fiction', description='''The Call of the Wild is an adventure novel by Jack London, published in 1903 and set in 
+Yukon, Canada, during the 1890s Klondike Gold Rush, when strong sled dogs were in 
+high demand. The central character of the novel is a dog named Buck. ''', rating='7.82', image='The Call Of The Wild.jpg')
+book12 = BookData(name='The Lightning Thief', category='Fiction', description='''Percy Jackson is a good kid, but he can't seem to focus on his schoolwork or control his 
+temper. And lately, being away at boarding school is only getting worse - Percy could 
+have sworn his pre-algebra teacher turned into a monster and tried to kill him. When 
+Percy's mom finds out, she knows it's time that he knew the truth about where he came 
+from, and that he go to the one place he'll be safe. She sends Percy to Camp Half Blood, 
+a summer camp for demigods (on Long Island), where he learns that the father he never 
+knew is Poseidon, God of the Sea. Soon a mystery unfolds and together with his 
+friends—one a satyr and the other the demigod daughter of Athena - Percy sets out on a 
+quest across the United States to reach the gates of the Underworld (located in a 
+recording studio in Hollywood) and prevent a catastrophic war between the gods.''', rating='8.62', image='The Lightning Thief.jpg')
+book13 = BookData(name='IT', category='Horror', description='''It began for the Losers on a day in June of 1958, the day school let out for the summer. 
+That was the day Henry Bowers carved the first letter of his name on Ben Hanscom's 
+belly and chased him into the Barrens, the day Henry and his Neanderthal friends beat 
+up on Stuttering Bill Denbrough and Eddie Kaspbrak, the day Stuttering Bill had to save 
+Eddie from his worst asthma attack ever by riding his bike to beat the devil. It ended in 
+August, with seven desperate children in search of a creature of unspeakable evil in the 
+drains beneath Derry. In search of It. And somehow it ended. 
+Or so they thought. Then. 
+On a spring night in 1985 Mike Hanlon, once one of those children, makes six calls. Stan 
+Uris, accountant. Richie "Records" Tozier, L.A. disc jockey. Ben Hanscom, renowned 
+architect. Beverly Rogan, dress designer. Eddie Kaspbrak, owner of a successful New 
+York limousine company. And Bill Denbrough, bestselling writer of horror novels, Bill 
+Denbrough who now only stutters in his dreams. 
+These six men and one woman have forgotten their childhoods,have forgotten the time 
+when they were Losers...but an unremembered promise draws them back, the present 
+begins to rhyme dreadfully with the past, and when the Losers reunite, the wheels of fate 
+lock together and roll them towards the ultimate terror. 
+In the biggest and most ambitious book of his career, Stephen King gives us not only his 
+most towering epic of horror but a surprising re-illumination of the corridor where we 
+pass from the bright mysteries of childhood to those of maturity.''', rating='8.48', image='IT.jpg')
+book14 = BookData(name='The Hobbit', category='Fantasy', description='''In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the 
+ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit 
+down on or to eat: it was a hobbit-hole, and that means comfort. 
+Written for J.R.R. Tolkien’s own children, The Hobbit met with instant critical acclaim 
+when it was first published in 1937. Now recognized as a timeless classic, this 
+introduction to the hobbit Bilbo Baggins, the wizard Gandalf, Gollum, and the spectacular 
+world of Middle-earth recounts of the adventures of a reluctant hero, a powerful and 
+dangerous ring, and the cruel dragon Smaug the Magnificent. The text in this 372-page 
+paperback edition is based on that first published in Great Britain by Collins Modern 
+Classics (1998), and includes a note on the text by Douglas A. Anderson (2001).''', rating='8.60', image='The Hobbit.jpg')
+book15 = BookData(name='A Game of Thrones', category='Fantasy', description='''Long ago, in a time forgotten, a preternatural event threw the seasons out of balance. In 
+a land where summers can last decades and winters a lifetime, trouble is brewing. The 
+cold is returning, and in the frozen wastes to the north of Winterfell, sinister forces are 
+massing beyond the kingdom’s protective Wall. To the south, the king’s powers are 
+failing—his most trusted adviser dead under mysterious circumstances and his enemies 
+emerging from the shadows of the throne. At the center of the conflict lie the Starks of 
+Winterfell, a family as harsh and unyielding as the frozen land they were born to. Now 
+Lord Eddard Stark is reluctantly summoned to serve as the king’s new Hand, an 
+appointment that threatens to sunder not only his family but the kingdom itself. 
+Sweeping from a harsh land of cold to a summertime kingdom of epicurean plenty, A 
+Game of Thrones tells a tale of lords and ladies, soldiers and sorcerers, assassins and 
+bastards, who come together in a time of grim omens. Here an enigmatic band of 
+warriors bear swords of no human metal; a tribe of fierce wildlings carry men off into 
+madness; a cruel young dragon prince barters his sister to win back his throne; a child is 
+lost in the twilight between life and death; and a determined woman undertakes a 
+treacherous journey to protect all she holds dear. Amid plots and counter-plots, tragedy 
+and betrayal, victory and terror, allies and enemies, the fate of the Starks hangs 
+perilously in the balance, as each side endeavors to win that deadliest of conflicts: the 
+game of thrones.''', rating='8.9', image='A Game Of Thrones.jpg')
+book16 = BookData(name='The Hound of the Baskervilles', category='Mystery', description='''In this, one of the most famous of Doyle's mysteries, the tale of an ancient curse and a 
+savage ghostly hound comes frighteningly to life. The gray towers of Baskerville Hall and 
+the wild open country of Dartmoor will haunt the reader as Holmes and Watson seek to 
+unravel the many secrets of the misty English bogs. ''', rating='8.2', image='The Hound Of The Baskervilles.jpg')
+book17 = BookData(name='The Lion, the Witch and the Wardrobe', category='Fantasy', description='''They open a door and enter a world NARNIA...the land beyond the wardrobe, the secret 
+country known only to Peter, Susan, Edmund, and Lucy...the place where the adventure 
+begins. Lucy is the first to find the secret of the wardrobe in the professor's mysterious 
+old house. At first, no one believes her when she tells of her adventures in the land of 
+Narnia. But soon Edmund and then Peter and Susan discover the Magic and meet 
+Aslan, the Great Lion, for themselves. In the blink of an eye, their lives are changed 
+forever.''', rating='8.4', image='The Lion, the Witch and the Wardrobe.jpg')
+book18 = BookData(name='The Bad Beginning', category='Mystery', description='''Dear Reader, 
+I'm sorry to say that the book you are holding in your hands is extremely unpleasant. It 
+tells an unhappy tale about three very unlucky children. Even though they are charming 
+and clever, the Baudelaire siblings lead lives filled with misery and woe. From the very 
+first page of this book when the children are at the beach and receive terrible news, 
+continuing on through the entire story, disaster lurks at their heels. One might say they 
+are magnets for misfortune. 
+In this short book alone, the three youngsters encounter a greedy and repulsive villain, 
+itchy clothing, a disastrous fire, a plot to steal their fortune, and cold porridge for 
+breakfast. 
+It is my sad duty to write down these unpleasant tales, but there is nothing stopping you 
+from putting this book down at once and reading something happy, if you prefer that sort 
+of thing. 
+With all due respect, 
+Lemony Snicket ''', rating='8.04', image='The Bad Beginning.jpg')
+book19 = BookData(name='Diary of a Wimpy Kid: Dog Days', category='Fiction', description='''It’s summer vacation, the weather’s great, and all the kids are having fun outside. So 
+where’s Greg Heffley? Inside his house, playing video games with the shades drawn. 
+Greg, a self-confessed "indoor person,” is living out his ultimate summer fantasy: no 
+responsibilities and no rules. But Greg’s mom has a different vision for an ideal summer . 
+. . one packed with outdoor activities and "family togetherness.” 
+Whose vision will win out? Or will a new addition to the Heffley family change 
+everything?''', rating='8.34', image='Dog Days.jpg')
+book20 = BookData(name='Green Eggs and Ham', category='Fiction', description='''“Do you like green eggs and ham?” asks Sam-I-am in this Beginner Book by Dr. Seuss. 
+In a house or with a mouse? In a boat or with a goat? On a train or in a tree? Sam keeps 
+asking persistently. With unmistakable characters and signature rhymes, Dr. Seuss’s 
+beloved favorite has cemented its place as a children’s classic. In this most famous of 
+cumulative tales, the list of places to enjoy green eggs and ham, and friends to enjoy 
+them with, gets longer and longer. Follow Sam-I-am as he insists that this unusual treat 
+is indeed a delectable snack to be savored everywhere and in every way. 
+Originally created by Dr. Seuss, Beginner Books encourage children to read all by 
+themselves, with simple words and illustrations that give clues to their meaning.''', rating='8.6', image='Green Eggs And Ham.jpg')
+book_list = [book1, book2, book3, book4, book5, book6, book7, book8, book9, book10, book11, book12, book13, book14, book15, book16, book17, book18, book19, book20]
+for x in book_list:
+	x.save()
+
+BookData.objects.all().values()
