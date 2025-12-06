@@ -1,0 +1,51 @@
+{% include 'AnimalMessaging/pageHeader.html' %}
+{% load static %}
+<meta http-equiv="refresh" content="35">
+
+<link rel="stylesheet" href="{% static 'CSS/globalCSS.css' %}">
+<link rel="stylesheet" href="{% static 'CSS/messageCSS.css' %}">
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Posts</title>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class = "item" style="background-color: white">
+            {% for x in villagers %}
+
+
+                <div class="post_container">
+                    <div class="post_information">
+                        <img src="{% static x.return_image_url %}" class="post_image" alt="Image was supposed to load here">
+                        <p style="text-align: center">{{ x.name }}</p>
+                        <p style="text-align: center">{{ x.personality }}</p>
+                    </div>
+
+                    <div class="post_content">
+                        <p>{{ x.initialCatchphrase }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="item_form" style="background-color: darkgray">
+            <form method="post">
+                {% csrf_token %}
+
+                <table>
+                    <tr>
+
+                    </tr>
+                </table>
+
+                <input type="submit" value="Create message">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

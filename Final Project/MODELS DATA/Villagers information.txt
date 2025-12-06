@@ -1,0 +1,116 @@
+Villagers
+Ankha
+Bob
+Punchy
+Cranston
+Kid Cat
+Raymond
+Pietro
+Sasha
+Audie
+Lolly
+
+---------------------------------------------------------------------------------------------------------------------------------------
+Ankha
+	- Name: 
+	- Species: 
+	- Birthday: 
+	- Gender: 
+	- Personality: 
+	- initalCatchphrase: 
+	- Skill: 
+	- Goal: 
+
+Bob
+	- Name: 
+	- Species: 
+	- Birthday: 
+	- Gender: 
+	- Personality: 
+	- initalCatchphrase: 
+	- Skill: 
+	- Goal: 
+
+Punchy
+	- Name: 
+	- Species: 
+	- Birthday: 
+	- Gender: 
+	- Personality: 
+	- initalCatchphrase: 
+	- Skill: 
+	- Goal: 
+
+Cranston
+	- Name: 
+	- Species: 
+	- Birthday: 
+	- Gender: 
+	- Personality: 
+	- initalCatchphrase: 
+	- Skill: 
+	- Goal: 
+
+Kid Cat
+	- Name: 
+	- Species: 
+	- Birthday: 
+	- Gender: 
+	- Personality: 
+	- initalCatchphrase: 
+	- Skill: 
+	- Goal: 
+
+Raymond
+	- Name: 
+	- Species: 
+	- Birthday: 
+	- Gender: 
+	- Personality: 
+	- initalCatchphrase: 
+	- Skill: 
+	- Goal: 
+
+Pietro
+	- Name: 
+	- Species: 
+	- Birthday: 
+	- Gender: 
+	- Personality: 
+	- initalCatchphrase: 
+	- Skill: 
+	- Goal: 
+
+Sasha
+	- Name: 
+	- Species: 
+	- Birthday: 
+	- Gender: 
+	- Personality: 
+	- initalCatchphrase: 
+	- Skill: 
+	- Goal: 
+
+Audie
+	- Name: 
+	- Species: 
+	- Birthday: 
+	- Gender: 
+	- Personality: 
+	- initalCatchphrase: 
+	- Skill: 
+	- Goal: 
+
+Lolly
+	- Name: 
+	- Species: 
+	- Birthday: 
+	- Gender: 
+	- Personality: 
+	- initalCatchphrase: 
+	- Skill: 
+	- Goal: 
+
+
+
+

@@ -1,0 +1,45 @@
+Villagers
+Ankha
+Bob
+Punchy
+Cranston
+Kid Cat
+Raymond
+Pietro
+Sasha
+Audie
+Lolly
+
+Layout
+- Name: 
+- Species: 
+- Birthday: 
+- Gender: 
+- Personality: 
+- initalCatchphrase: 
+- Skill: 
+- Goal: 
+---------------------------------------------------------------------------------------------------------------------------------------
+from AnimalMessaging.models import Villagers
+
+villager1 = Villagers(name='Ankha', species='Cat', birthday='2005-09-22', gender='F', personality='Snooty', initialCatchphrase='''me meow''', skill='Writing about Pickles', goal='Astronaut', image='Ankha_Icon.png')
+villager2 = Villagers(name='Bob', species='Cat', birthday='2018-01-01', gender='M', personality='Lazy', initialCatchphrase='''pthhpth''', skill='Yo-Yoing', goal='Detective', image='Bob_Icon.png')
+villager3 = Villagers(name='Punchy', species='Cat', birthday='2001-04-11', gender='M', personality='Lazy', initialCatchphrase='''Madras Plaid Shirt''', skill='Staying awake', goal='Cartoonist', image='Punchy_Icon.png')
+villager4 = Villagers(name='Cranston', species='Ostrich', birthday='2020-09-23', gender='M', personality='Lazy', initialCatchphrase='''sweatband''', skill='Backflipping', goal='CEO', image='Cranston_Icon.png')
+villager5 = Villagers(name='Kid Cat', species='Cat', birthday='2017-08-01', gender='M', personality='Jock', initialCatchphrase='''psst''', skill='Sprinting', goal='Superhero', image='Kid_Cat_Icon.png')
+villager6 = Villagers(name='Raymond', species='Cat', birthday='2020-10-01', gender='M', personality='Smug', initialCatchphrase='''crisp''', skill='Rapping', goal='Fashion designer', image='Raymond_Icon.png')
+villager7 = Villagers(name='Pietro', species='Sheep', birthday='2018-04-19', gender='M', personality='Smug', initialCatchphrase='''honk honk''', skill='Making Crafts', goal='Artist', image='Pietro_Icon.png')
+villager8 = Villagers(name='Sasha', species='Rabbit', birthday='2021-05-19', gender='M', personality='Lazy', initialCatchphrase='''hoppity''', skill='Food', goal='Fashion', image='Sasha_Icon.png')
+villager9 = Villagers(name='Audie', species='Wolf', birthday='2020-08-31', gender='F', personality='Peppy', initialCatchphrase='''foxtrot''', skill='Fitness', goal='DJ Party Zone', image='Audie_Icon.png')
+villager10 = Villagers(name='Lolly', species='Cat', birthday='2003-03-27', gender='F', personality='Normal', initialCatchphrase='''bonbon''', skill='Peeling apples', goal='Chef', image='Lolly_Icon.png')
+
+villager_list=[villager1, villager2, villager3, villager4, villager5, villager6, villager7, villager8, villager9, villager10]
+for x in villager_list: 
+	x.save()
+
+Villagers.objects.all().values()
+
+
+
+
+

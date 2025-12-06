@@ -1,0 +1,79 @@
+Ankha - 
+Bow down peasant!! I was hoping you'd drop by to say hello, me meow!
+I don't enjoy doing magic tricks like I used to, and raisin bread doesn't even taste sweet anymore!
+Your clothing is fabulous, darling! I swear, you make whatever you wear look marvelous.
+On days like this, I like to reward myself with a refreshing coconut soda.
+My stars, it looked awful. But in the end, the judges loved it, me meow!
+
+Bob - 
+Nice to meet ya I'm Bob, and I live here with my bug friends!
+Ya don't sell your friends. That's suuuper uncool.
+I dunno what's happening, but i feel kinda creeped out. Or maybe gassy...But I think I'm kinda scared!
+I got my potato chips, tomato chips, pickle chips, shrimp chips, chocolate chips, spicy chips...
+I got everything I need to be comfy except for my TV. I FORGOT MY TV! Oh man. I can't believe it! Ohhh man.
+
+Punchy - 
+I scream, "What am I doing outside? How'd I get out of my house? Am I a werewolf? DID I EAT ANYBODY?"
+I saved a snack to eat with you, but when I forgot which it was in and sat on it.
+It's hard to stay chill with so much on my plate, y'know?
+Folks keeping asking if things are OK. I'll tell ya what's OK! Nothing! Everything in life is un-OK! The jam I always spread on stuff? Missing! It's missing, man! Missing!
+The jar's there is like always, right? The jar never lets me down. But the jam inside...it SKIPPED TOWN, man! These are dark days...real...real dark. Tell you love it while you still got the chance.
+
+Cranston - 
+Why didn't you tell me you ere throwing a cockroach party?! I didn't bring any snack-I didn't dress up...
+I used to play all kinds of things with my friends when we were little. Like jump rope! Except all of us want to jump 'cause swinging a rope around is kinda boring...
+So? Whaddaya think? I'm ready to eat frozen custard, OR, um...do a capoeira? Probably?
+The coolest part about hanging out with you is that you remind me of a lot of my favorite things... Bugs 'cause they're funny. TV 'cause it makes me happy. Aaand warm soup 'cause it calms me down.
+
+Kid Cat - 
+I LOVE MY MUSCLES!
+Champ! You're back! How'd your octuple marathon go?
+You can't just train your muscle muscles. You've got to train your emotional muscles too...
+Your place has a great vibe, but it would be even better if it had an exercise machine, psst!
+Heya! Is it weight training time?
+
+
+Raymond - 
+Ooh, that outfit you're wearing today... C'est manifique! That's Spanish for bellissimo!
+When it's time to sit down and do some writing, there's nothing better than my office desk.
+Wondering what is it I'm writing? I'll leave it to your imagination!
+I suppose if I had to categorize myself as a musical artist, I'd say I'm mostly into cabaret.
+But, I'm also really well known in country circles. There's even a book that was basically about on me! Well, it's not entirely based on a true story. More like, "inspired by a fever dream."
+
+Pietro - 
+I don't break out a "woo" very often, but this is woo worthy.
+Another cold one today... Guess it's time to pull out the ultra-wool, self-warming knee socks.
+That's right! I've discovered high-tech winterwear!
+No more hibernating all winter long, desperately awaiting the first of spring and it's cute outfits.
+Now I just slip on my triple-insulated snow pants line with waterproof safety technology and I'm all good!
+
+Sasha - 
+Pizza. Pizza is yes. You know...a lot of the time, I say goofy stuff. Or I make a joke. Not now. Pizza...is yes.
+I'm, um...I'm not allowed to drive cars. Anymore.
+Wah! I'm awake! I'm awake!
+I love churros! You calling me a churro is, wow, what an honor...
+Man, it'd be real neat to live on an island like this. Full-time, I mean. Just living life...pointing at nature...
+
+Audie -
+Were you away practicing your favorite hobby, break dancing? Huh? That's not your hobby?
+Here I am, an up-and-coming pop star surrounded by gobs of stylish art and other cool cultural stuff. Are you, like, thinking of what I'm thinking?!
+I'm thinking someone should totes take my pic and put it on the cover of my fave new magazine! It's called the Sophisticated Wolf and it is sooo me, foxtrot!
+Well, that's how I want to be too... Super hip and stylish for ALL ETERNITY!
+
+Lolly - 
+If we'd seen each other sooner, I could've invited you to my club, "Crazy For Moon Cake." 
+OK I might've been the only member but still... 
+If you drink your tea with nothing else in it, you can't go wrong with the taste of Darjeeling!
+I was reading a whodunit novel from the library when I found a note sandwiched in between the pages!
+The note read, "Penguins don't get frostbite." Was that true? I felt like I should know, bonbon...
+
+
+
+from AnimalMessaging.models import Posts
+post1=Posts(image='Sasha_Icon.png', name='Sasha', personality='Lazy', message='Testing 1, 2, 3')
+post1.save()
+
+Posts.objects.all().values()
+
+
+

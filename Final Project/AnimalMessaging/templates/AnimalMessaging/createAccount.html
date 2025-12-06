@@ -1,0 +1,28 @@
+{% include 'AnimalMessaging/pageHeader.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'CSS/globalCSS.css' %}">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account</title>
+</head>
+<body>
+
+    <h1 style="text-align: center; margin-top: 3%">Create Account</h1>
+
+    <div style="margin: 0; position: absolute; top: 25%; left: 30%; border: solid 20px; border-color: #fff563">
+        <form method="POST" autocomplete="off" style="margin: 20px">
+            {% csrf_token %}
+
+            {{ createAccountForm.as_p }}
+
+            <input type="submit" value="Create Account">
+        </form>
+    </div>
+
+
+</body>
+</html>

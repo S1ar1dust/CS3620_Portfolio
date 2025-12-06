@@ -1,0 +1,70 @@
+from AnimalMessaging.models import Messages
+
+message1 = Messages(name='Ankha', message='''Bow down peasant!! I was hoping you'd drop by to say hello, me meow!''')
+message2 = Messages(name='Ankha', message='''I don't enjoy doing magic tricks like I used to, and raisin bread doesn't even taste sweet anymore!''')
+message3 = Messages(name='Ankha', message='''Your clothing is fabulous, darling! I swear, you make whatever you wear look marvelous.''')
+message4 = Messages(name='Ankha', message='''On days like this, I like to reward myself with a refreshing coconut soda.''')
+message5 = Messages(name='Ankha', message='''My stars, it looked awful. But in the end, the judges loved it, me meow!''')
+
+message6 = Messages(name='Bob', message='''Nice to meet ya I'm Bob, and I live here with my bug friends!''')
+message7 = Messages(name='Bob', message='''Ya don't sell your friends. That's suuuper uncool.''')
+message8 = Messages(name='Bob', message='''I dunno what's happening, but i feel kinda creeped out. Or maybe gassy...But I think I'm kinda scared!''')
+message9 = Messages(name='Bob', message='''I got my potato chips, tomato chips, pickle chips, shrimp chips, chocolate chips, spicy chips...''')
+message10 = Messages(name='Bob', message='''I got everything I need to be comfy except for my TV. I FORGOT MY TV! Oh man. I can't believe it! Ohhh man.''')
+
+message11 = Messages(name='Punchy', message='''I scream, "What am I doing outside? How'd I get out of my house? Am I a werewolf? DID I EAT ANYBODY?"''')
+message12 = Messages(name='Punchy', message='''I saved a snack to eat with you, but when I forgot which it was in and sat on it.''')
+message13 = Messages(name='Punchy', message='''It's hard to stay chill with so much on my plate, y'know?''')
+message14 = Messages(name='Punchy', message='''Folks keeping asking if things are OK. I'll tell ya what's OK! Nothing! Everything in life is un-OK! The jam I always spread on stuff? Missing! It's missing, man! Missing!''')
+message15 = Messages(name='Punchy', message='''The jar's there is like always, right? The jar never lets me down. But the jam inside...it SKIPPED TOWN, man! These are dark days...real...real dark. Tell you love it while you still got the chance.''')
+
+message16 = Messages(name='Cranston', message='''Why didn't you tell me you ere throwing a cockroach party?! I didn't bring any snack-I didn't dress up...''')
+message17 = Messages(name='Cranston', message='''I used to play all kinds of things with my friends when we were little. Like jump rope! Except all of us want to jump 'cause swinging a rope around is kinda boring...''')
+message18 = Messages(name='Cranston', message='''So? Whaddaya think? I'm ready to eat frozen custard, OR, um...do a capoeira? Probably?''')
+message19 = Messages(name='Cranston', message='''The coolest part about hanging out with you is that you remind me of a lot of my favorite things... Bugs 'cause they're funny. TV 'cause it makes me happy.''')
+message20 = Messages(name='Cranston', message='''Aaand warm soup 'cause it calms me down.''')
+
+message21 = Messages(name='Kid Cat', message='''I LOVE MY MUSCLES!''')
+message22 = Messages(name='Kid Cat', message='''Champ! You're back! How'd your octuple marathon go?''')
+message23 = Messages(name='Kid Cat', message='''You can't just train your muscle muscles. You've got to train your emotional muscles too...''')
+message24 = Messages(name='Kid Cat', message='''Your place has a great vibe, but it would be even better if it had an exercise machine, psst!''')
+message25 = Messages(name='Kid Cat', message='''Heya! Is it weight training time?''')
+
+message26 = Messages(name='Raymond', message='''Ooh, that outfit you're wearing today... C'est manifique! That's Spanish for bellissimo!''')
+message27 = Messages(name='Raymond', message='''When it's time to sit down and do some writing, there's nothing better than my office desk.''')
+message28 = Messages(name='Raymond', message='''Wondering what is it I'm writing? I'll leave it to your imagination!''')
+message29 = Messages(name='Raymond', message='''I suppose if I had to categorize myself as a musical artist, I'd say I'm mostly into cabaret.''')
+message30 = Messages(name='Raymond', message='''But, I'm also really well known in country circles. There's even a book that was basically about on me! Well, it's not entirely based on a true story. More like, "inspired by a fever dream."''')
+
+message31 = Messages(name='Pietro', message='''I don't break out a "woo" very often, but this is woo worthy.''')
+message32 = Messages(name='Pietro', message='''Another cold one today... Guess it's time to pull out the ultra-wool, self-warming knee socks.''')
+message33 = Messages(name='Pietro', message='''That's right! I've discovered high-tech winterwear!''')
+message34 = Messages(name='Pietro', message='''No more hibernating all winter long, desperately awaiting the first of spring and it's cute outfits.''')
+message35 = Messages(name='Pietro', message='''Now I just slip on my triple-insulated snow pants line with waterproof safety technology and I'm all good!''')
+
+message36 = Messages(name='Sasha', message='''Pizza. Pizza is yes. You know...a lot of the time, I say goofy stuff. Or I make a joke. Not now. Pizza...is yes.''')
+message37 = Messages(name='Sasha', message='''I'm, um...I'm not allowed to drive cars. Anymore.''')
+message38 = Messages(name='Sasha', message='''Wah! I'm awake! I'm awake!''')
+message39 = Messages(name='Sasha', message='''I love churros! You calling me a churro is, wow, what an honor...''')
+message40 = Messages(name='Sasha', message='''Man, it'd be real neat to live on an island like this. Full-time, I mean. Just living life...pointing at nature...''')
+
+message41 = Messages(name='Audie', message='''Were you away practicing your favorite hobby, break dancing? Huh? That's not your hobby?''')
+message42 = Messages(name='Audie', message='''Here I am, an up-and-coming pop star surrounded by gobs of stylish art and other cool cultural stuff. Are you, like, thinking of what I'm thinking?!''')
+message43 = Messages(name='Audie', message='''I'm thinking someone should totes take my pic and put it on the cover of my fave new magazine! It's called the Sophisticated Wolf and it is sooo me, foxtrot!''')
+message44 = Messages(name='Audie', message='''Well, that's how I want to be too... Super hip and stylish for ALL ETERNITY!''')
+message45 = Messages(name='Audie', message='''Be the kind of person your future self won't regret having been''')
+
+message46 = Messages(name='Lolly', message='''If we'd seen each other sooner, I could've invited you to my club, "Crazy For Moon Cake."''')
+message47 = Messages(name='Lolly', message='''OK I might've been the only member but still...''')
+message48 = Messages(name='Lolly', message='''If you drink your tea with nothing else in it, you can't go wrong with the taste of Darjeeling!''')
+message49 = Messages(name='Lolly', message='''I was reading a whodunit novel from the library when I found a note sandwiched in between the pages!''')
+message50 = Messages(name='Lolly', message='''The note read, "Penguins don't get frostbite." Was that true? I felt like I should know, bonbon...''')
+
+
+message_list=[message1, message2, message3, message4, message5, message6, message7, message8, message9, message10, message11, message12, message13, message14, message15, message16, message17, message18, message19, message20, message21, message22, message23, message24, message25, message26, message27, message28, message29, message30, message31, message32, message33, message34, message35, message36, message37, message38, message39, message40, message41, message42, message43, message44, message45, message46, message47, message48, message49, message50]
+for x in message_list:
+	x.save()
+
+Messages.objects.all().values()
+
+

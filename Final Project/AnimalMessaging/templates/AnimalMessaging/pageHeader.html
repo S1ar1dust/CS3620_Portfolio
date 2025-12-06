@@ -1,0 +1,55 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'CSS/globalCSS.css' %}">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            {% if user.is_authenticated %}
+                <ul class="navbar-nav mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Message Board">Message Board</a>
+                    </li>
+                    <li class="nav-item" id="liCustomMessages">
+                        <a class="nav-link" href="/Custom Messages">Custom Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Dont Sue">Don't Sue</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav my-2 my-lg-0" style="padding-left: 1425px">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Logout">Logout</a>
+                    </li>
+                </ul>
+            {% else %}
+                <ul class="navbar-nav mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Message Board">Message Board</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Dont Sue">Don't Sue</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav my-2 my-lg-0" style="padding-left: 1450px">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Create Account">Create Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Login">Login</a>
+                    </li>
+                </ul>
+            {% endif %}
+        </div>
+    </nav>
+</head>
+</html>

@@ -1,0 +1,30 @@
+{% include 'AnimalMessaging/pageHeader.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'CSS/globalCSS.css' %}">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Message</title>
+</head>
+<body>
+    <div>
+        <h3>Create a new post message or a selected villager</h3>
+
+        <form method="post">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    {% for field in form %}
+                        <td>{{ form.message }}</td>
+                        <td>{{ field }}</td>
+                    {% endfor %}
+                </tr>
+            </table>
+
+            <input type="submit" value="Create message">
+        </form>
+    </div>
+</body>
+</html>
